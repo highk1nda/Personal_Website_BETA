@@ -63,7 +63,7 @@ h1 {
     height: 55px;
 }
   
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .menu {
         display: none;
     }
@@ -92,6 +92,9 @@ h1 {
     }
     .p{
         font-size: 40px;
+    }
+    .nav{
+        display: flex;
     }
 }
 
