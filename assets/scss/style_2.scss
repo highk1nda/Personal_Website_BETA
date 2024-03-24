@@ -1,0 +1,15 @@
+@mixin fontsize-h1($v1){
+    font-size: $v1;
+}
+.bg-text-h1{
+    @include fontsize-h1(32px)
+}
+// @mixin width-70($v1){
+//     width: $v1
+// }
+// .bg-text{
+//     @include width-70(70%)
+// }
+// .
+
+@import "style_3.scss";
