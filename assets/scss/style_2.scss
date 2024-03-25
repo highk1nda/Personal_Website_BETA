@@ -4,6 +4,42 @@
 .bg-text-h1{
     @include fontsize-h1(32px)
 }
+
+    
+@mixin bg-gradient{
+    background: linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 50.71%),linear-gradient(127deg, rgba(50, 227, 50, 0.8), rgba(0,255,0,0) 70.71%),linear-gradient(336deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70.71%);
+    animation: gradient 12s ease infinite;
+    background-size: 180% 180%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg {
+    height: 540px;
+    @include bg-gradient()
+}
+.description-container-social-media-1{
+    height: 140px;
+    @include bg-gradient()
+}
+// @mixin bg-gradient{
+//     animation: gradient 12s ease infinite;
+//     background-size: 180% 80%;
+// }
+// .description-container-social-media-1{
+//     background: linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 50.71%),linear-gradient(127deg, rgba(50, 227, 50, 0.8), rgba(0,255,0,0) 70.71%),linear-gradient(336deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70.71%);
+//     animation: gradient 12s ease infinite;
+//     height: 200px;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     @include bg-gradient
+    
+// }
 // @mixin width-70($v1){
 //     width: $v1
 // }
