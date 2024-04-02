@@ -2,10 +2,38 @@
     font-size: $v1;
 }
 .bg-text-h1{
-    @include fontsize-h1(32px)
+    @include fontsize-h1(32px);
+    letter-spacing: 2px;
+    text-align: center;
 }
 
-    
+.bg-text {
+    width: 70%;
+}
+
+@mixin bg-text-caps-mixin{
+    z-index: -1;
+    filter: blur(1px);
+    color: #535353;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+}
+.bg-text-caps-p{
+    font-size: 19vw;
+    padding-left: 1.5vh;
+    letter-spacing: 6vw;
+    @include bg-text-caps-mixin()
+}
+// .bg-bottom-caps-p{
+//     display: flex;
+//     justify-content: center;
+//     font-size: 13vw;
+//     letter-spacing: 3vw;
+//     @include bg-text-caps-mixin()
+// }
 @mixin bg-gradient{
     background: linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 50.71%),linear-gradient(127deg, rgba(50, 227, 50, 0.8), rgba(0,255,0,0) 70.71%),linear-gradient(336deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70.71%);
     animation: gradient 12s ease infinite;
@@ -52,7 +80,18 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+.content-img-text{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    font-size: 1.4vw;
+    justify-content: center;
+    transition: 0.5s;
+    &:hover{
+        font-size: 1.7vw;
+        transition: 0.2s;
+    }
+}
 // @mixin bg-gradient{
 //     animation: gradient 12s ease infinite;
 //     background-size: 180% 80%;

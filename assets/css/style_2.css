@@ -1,5 +1,25 @@
 .bg-text-h1 {
   font-size: 32px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.bg-text {
+  width: 70%;
+}
+
+.bg-text-caps-p {
+  font-size: 19vw;
+  padding-left: 1.5vh;
+  letter-spacing: 6vw;
+  z-index: -1;
+  filter: blur(1px);
+  color: #535353;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
 }
 
 .bg {
@@ -54,6 +74,19 @@ body {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.content-img-text {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  font-size: 1.4vw;
+  justify-content: center;
+  transition: 0.5s;
+}
+.content-img-text:hover {
+  font-size: 1.7vw;
+  transition: 0.2s;
 }
 
 .copyright {
