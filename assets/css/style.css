@@ -46,7 +46,7 @@ a {
     height: 50px;
     width: 100%;
     position: fixed;
-    opacity: 0.87;
+    opacity: 0.90;
     z-index: 100;
     transition: 0.2s;
 }
@@ -231,7 +231,8 @@ p {
     width:100%;
 }
 .description-container-1{
-    padding-top: 12%;
+    padding-top: 7%;
+    padding-bottom: 7%;
     display: flex;
     align-items: center;
     justify-content: center;

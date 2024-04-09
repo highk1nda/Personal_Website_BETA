@@ -66,6 +66,7 @@ body {
   width: 100%;
   padding: 30px;
   margin: 0;
+  position: relative;
 }
 
 .copyright {
@@ -89,8 +90,31 @@ body {
   transition: 0.2s;
 }
 
-.copyright {
-  color: black;
+.animated-circle {
+  position: absolute;
+  background-color: rgba(137, 100, 222, 0.3); /* Adjust opacity as needed */
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: slide 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
+}
+@keyframes slide {
+  0% {
+    transform: translate(-50%, -50%); /* Initial position */
+  }
+  100% {
+    transform: translate(-50%, -150%); /* Destination position */
+  }
 }
 
-/*# sourceMappingURL=style_2.css.map */
+.content-img-container {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+
+/* Animation Keyframes */
+
+/*# sourceMappingURL=style_main_c.css.map */

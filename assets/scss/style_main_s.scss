@@ -44,6 +44,10 @@
     justify-content: center;
     align-items: center;
 }
+@mixin bg-containers($opacity){
+    color: rgba(255, 255, 255, 0.73);
+    background: rgba(0, 0, 0, $opacity);
+}
 .bg {
     @include bg-gradient();
     height: 540px;
@@ -56,10 +60,7 @@ body {
     font-family: 'Mulish', sans-serif;
     height: 100%;
 }
-@mixin bg-containers($opacity){
-    color: rgba(255, 255, 255, 0.73);
-    background: rgba(0, 0, 0, $opacity);
-}
+
 .logo-info {
     @include bg-containers(0.87);
     width: 100%;
@@ -73,6 +74,7 @@ body {
     width: 100%;
     padding: 30px;
     margin: 0;
+    position: relative;
 }
 .copyright {
     @include bg-containers(0.87);
@@ -92,6 +94,33 @@ body {
         transition: 0.2s;
     }
 }
+.animated-circle {
+    position: absolute;
+    background-color: rgba(137, 100, 222, 0.3); /* Adjust opacity as needed */
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: slide 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
+    @keyframes slide {
+        0% {
+            transform: translate(-50%, -50%); /* Initial position */
+        }
+        100% {
+            transform: translate(-50%, -150%); /* Destination position */
+        }
+    }
+    
+}
+.content-img-container{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.visible {
+    opacity: 1;
+}
+
+/* Animation Keyframes */
+
 // @mixin bg-gradient{
 //     animation: gradient 12s ease infinite;
 //     background-size: 180% 80%;
@@ -115,5 +144,3 @@ body {
 //     @include width-70(70%)
 // }
 // .
-
-@import "style_3.scss";
