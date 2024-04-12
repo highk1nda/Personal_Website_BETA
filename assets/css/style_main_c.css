@@ -9,13 +9,13 @@
 }
 
 .bg-text-caps-p {
-  font-size: 19vw;
+  font-size: 16vw;
   padding-left: 1.5vh;
-  letter-spacing: 6vw;
+  letter-spacing: 2vw;
   z-index: -1;
-  filter: blur(1px);
+  filter: blur(3px);
   color: #535353;
-  opacity: 0.7;
+  opacity: 0.4;
   position: absolute;
   width: 100%;
   font-weight: 900;
@@ -54,6 +54,7 @@ body {
 .logo-info {
   color: rgba(255, 255, 255, 0.73);
   background: rgba(0, 0, 0, 0.87);
+  z-index: 1;
   width: 100%;
   display: flex;
   align-items: center;
@@ -92,9 +93,9 @@ body {
 
 .animated-circle {
   position: absolute;
-  background-color: rgba(137, 100, 222, 0.3); /* Adjust opacity as needed */
+  background-color: rgba(137, 100, 222, 0.4); /* Adjust opacity as needed */
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(95px);
   animation: slide 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
 }
 @keyframes slide {
@@ -108,7 +109,10 @@ body {
 
 .content-img-container {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 .visible {

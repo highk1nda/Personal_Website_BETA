@@ -8,9 +8,11 @@ function mobileMenu() {
     menu.classList.toggle("inactive");
 }
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
     var contentContainers = document.querySelectorAll(".content-img-container");
-    var bgText = document.querySelector(".bg-text-caps-p");
+    // var bgText = document.querySelector(".bg-text-caps-p");
 
     var offset = 200;
 
@@ -26,16 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
         });
-
-        if (isElementInViewport(bgText, offset)) {
-            if (!bgText.classList.contains("visible")) {
-                bgText.classList.add("visible");
-            }
-        } else {
-            if (bgText.classList.contains("visible")) {
-                bgText.classList.remove("visible");
-            }
-        }
     });
 
     function isElementInViewport(el, offset) {
@@ -51,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Trigger the scroll event to check initially
     window.dispatchEvent(new Event('scroll'));
 });
-
 
 
 
