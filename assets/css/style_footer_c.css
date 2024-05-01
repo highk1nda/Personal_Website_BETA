@@ -1,14 +1,9 @@
 .footer-main {
-  padding-top: 4%;
-  gap: 30vh;
+  gap: 10vh;
   display: flex;
   justify-content: center;
+  padding-top: 4%;
   padding-bottom: 6%;
-}
-
-.footer-a-img-link {
-  height: 100%;
-  width: 100%;
 }
 
 .hr-separator {
@@ -26,26 +21,28 @@
 }
 
 .footer-div {
-  width: auto;
-  transition: 0.3s;
-}
-.footer-div:hover {
-  width: 45px;
-  transition: 0.3s;
+  width: 10%;
+  height: 50px;
 }
 
 .logo-svg {
-  width: 40px;
+  height: 50px;
+  transition: 0.3s;
+}
+.logo-svg:hover {
+  height: 60px;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 800px) {
   .footer-main {
-    gap: 10vh;
+    padding-top: 6%;
   }
 }
 @media screen and (max-width: 350px) {
   .footer-main {
     gap: 5vh;
+    padding-top: 7%;
   }
 }
 
