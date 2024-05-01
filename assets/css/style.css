@@ -190,14 +190,6 @@ p {
     width: 100%;
 }
 
-.content-img {
-    opacity: 90%;
-    height: auto;
-    max-height: 350px;
-    width: 90%;
-    border-radius: 7%;
-}
-
 .text-description-container{
     width: 50%;
 }

@@ -76,11 +76,28 @@ body {
   display: flex;
   font-size: 1.4vw;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .content-img-text:hover {
   font-size: 1.7vw;
   transition: 0.2s;
+}
+
+.content-img {
+  background-color: #31573C;
+  opacity: 90%;
+  height: auto;
+  max-height: 350px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 7%;
+  box-shadow: 9px 13px #414141;
+  transition: 0.4s;
+}
+
+.content-img:hover {
+  box-shadow: 4px 5px #7b7b7b;
+  transition: 0.4s;
 }
 
 .animated-circle {
@@ -105,6 +122,13 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
+}
+
+.content-img-link {
+  font-size: 50px;
+}
+.content-img-link:hover + .content-img-text {
+  font-size: 50px;
 }
 
 .visible {
