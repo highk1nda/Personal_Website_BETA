@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
 .body::-webkit-scrollbar {
     display: none;
 }
@@ -56,12 +58,9 @@ a {
     height: 35px;
     width: 90%;
 }
-.logo-svg{
-    height: 35px;
-}
+
 .svg-logo{
     width: 100%;
-
 }
 
 .menu:hover {
