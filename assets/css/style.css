@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
 *,
 *::after,
 *::before {
@@ -5,8 +7,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
 
 .body::-webkit-scrollbar {
     display: none;
@@ -192,6 +192,7 @@ p {
 
 .text-description-container{
     width: 50%;
+    display: inline;
 }
 .content-img-news {
     opacity: 90%;
@@ -221,9 +222,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.text-description-container{
-    display: inline;
 }
 
 .main-container-social-media-2{
@@ -308,6 +306,8 @@ p {
         height: 60%;
     }
     .text-description-container{
+        padding-top: 20%;
+        padding-bottom: 30%;
         width: 100%;
     }
 }

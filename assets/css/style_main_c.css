@@ -71,20 +71,22 @@ body {
 }
 
 .content-img-text {
+  color: white;
+  font-weight: 300;
   position: absolute;
   z-index: 1;
   display: flex;
-  font-size: 1.4vw;
+  font-size: calc(12px + 1.1vw);
   justify-content: center;
   transition: 0.2s;
 }
 .content-img-text:hover {
-  font-size: 1.7vw;
+  font-size: calc(12px + 1.5vw);
   transition: 0.2s;
+  box-shadow: 0px 0px #7b7b7b;
 }
 
 .content-img {
-  background-color: #31573C;
   opacity: 90%;
   height: auto;
   max-height: 350px;
@@ -94,10 +96,16 @@ body {
   box-shadow: 9px 13px #414141;
   transition: 0.4s;
 }
-
 .content-img:hover {
   box-shadow: 4px 5px #7b7b7b;
   transition: 0.4s;
+}
+
+.content-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .animated-circle {
@@ -122,13 +130,6 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
-}
-
-.content-img-link {
-  font-size: 50px;
-}
-.content-img-link:hover + .content-img-text {
-  font-size: 50px;
 }
 
 .visible {
