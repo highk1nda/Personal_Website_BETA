@@ -1,2 +1,4 @@
 assets/css/*.css.map
 test/*
+images/old/*
+images/to-replace/*
