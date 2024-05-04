@@ -1,7 +1,33 @@
+@mixin bg-gradient{
+    background: linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255, 255, 255, 0) 50.71%),linear-gradient(127deg, rgba(50, 227, 50, 0.8), rgba(255, 255, 255, 0) 70.71%),linear-gradient(336deg, rgba(0,0,255,0.8), rgba(255, 255, 255, 0) 70.71%);
+    animation: gradient 12s ease infinite;
+    background-size: 200% 200%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: (3px);
+}
+.bg-contacts {
+    @include bg-gradient();
+    height: 100vh;
+}
+.info {
+    width: 100%;
+    padding-top: 10%;
+}
 body{
     height: 100%;
 }
-.bgseparator{
+.bgseparator-title{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgseparator-contacts{
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,6 +56,7 @@ body{
     background-color: black;
     width: 50%;
     min-height: 300px;
+    max-height: 400px;
 }
 .bg-title{
     padding-bottom: 3%;
@@ -116,15 +143,15 @@ input[type=submit]:hover {
         width: 100%;
     }
     .container-form{
+        align-items: center;
         display: flex;
-        width: 71%;
         flex-direction: column;
         display: flex;
         gap: 2rem;
         opacity: 0.8;
     }
     .bg-contacts{
-        padding-bottom: 20vh;
+        padding-bottom: 50vh;
         display: flex;
         justify-content: center;
         align-items: center;

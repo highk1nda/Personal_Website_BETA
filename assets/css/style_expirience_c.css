@@ -24,17 +24,4 @@
   align-items: center;
 }
 
-.bg-contacts {
-  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 255, 255, 0) 50.71%), linear-gradient(127deg, rgba(50, 227, 50, 0.8), rgba(255, 255, 255, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(255, 255, 255, 0) 70.71%);
-  animation: gradient 12s ease infinite;
-  background-size: 200% 200%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: 3px;
-  height: 100vh;
-}
-
 /*# sourceMappingURL=style_expirience_c.css.map */
