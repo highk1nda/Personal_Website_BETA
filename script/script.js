@@ -5,7 +5,7 @@ hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
-    menu.classList.toggle("inactive");
+    menu.classList.toggle("active");
 }
 
 

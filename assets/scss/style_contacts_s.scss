@@ -1,0 +1,134 @@
+body{
+    height: 100%;
+}
+.bgseparator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-contacts{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.container-form{
+    padding-top: 70px;
+    height: 49vh;
+    display: flex;
+    gap: 2rem;
+    width: 90%;
+    opacity: 0.8;
+}
+.container-form-left{
+    width: 50%;
+}
+.container-form-right{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: black;
+    width: 50%;
+    min-height: 300px;
+}
+.bg-title{
+    padding-bottom: 3%;
+}
+.bg-title-h1{
+    display: flex;
+    justify-content: center;
+}
+.input_box{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 85%;
+}
+.text-area-title{
+    width: 100%;
+    color: white;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 9px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: #2f2f2f;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 43px;
+    transition: 0.3s;
+    color: #ffffff;
+}
+
+input[type=submit]:hover {
+    transition: 0.2s ease-in-out;
+    background-image: linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 70.71%),linear-gradient(127deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70.71%),linear-gradient(336deg, rgba(0,255,0,0.8), rgba(0,255,0,0) 70.71%);
+    background-size: 200% 300%;
+    -webkit-animation: 10s infinite granimate;
+    animation: 10s infinite granimate;
+    opacity: 80%;
+}
+
+.button-contact{
+    width: 130px;
+}
+
+// @media screen and (max-width:890px) {
+//     .button-contact{
+//         width: 130px;
+//     }
+// }
+.footer-main{
+    gap: 10vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 9%;
+    padding-bottom: 0%;
+}
+@media screen and (max-height:700px) {
+    .bg-contacts{
+        padding-bottom: 15vh;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container-form-left{
+        width: 100%;
+    }
+    .container-form-right{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    .container-form{
+        display: flex;
+        width: 71%;
+        flex-direction: column;
+        display: flex;
+        gap: 2rem;
+        opacity: 0.8;
+    }
+    .bg-contacts{
+        padding-bottom: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+}
