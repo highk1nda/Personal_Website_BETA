@@ -14,7 +14,6 @@ jobs:
            echo KEY  $SSH_KEY HERE
            echo pretty please
            echo $SSH_KEY > .ssh/id_rsa
-           head .ssh/id_rsa
-           chmod o-rwx .ssh/id_rsa
-           chmod g-rwx .ssh/id_rsa
+           hexdump -Cn1679 .ssh/id_rsa
+           chmod 0600 .ssh/id_rsa
            ssh -o "StrictHostKeyChecking no" asats8lf@asatsuk.com  "touch ha"
