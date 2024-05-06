@@ -1,0 +1,10 @@
+on:
+  push:
+    branches:
+    - main
+jobs:
+  deploy_to_server:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Name
+         run: echo "ssh-keysss"
