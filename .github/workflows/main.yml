@@ -11,7 +11,7 @@ jobs:
            SSH_KEY: ${{ secrets.SSH_RSA_KEY }}
          run: |
            mkdir .ssh
-           echo "ello"
+           echo "please"
            echo $SSH_KEY > .ssh/id_rsa
            chmod o-rwx .ssh/id_rsa
            chmod g-rwx .ssh/id_rsa
