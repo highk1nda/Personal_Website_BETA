@@ -12,6 +12,7 @@ jobs:
          run: |
            mkdir .ssh
            echo KEY  $SSH_KEY HERE
+           echo pretty please
            echo $SSH_KEY > .ssh/id_rsa
            head .ssh/id_rsa
            chmod o-rwx .ssh/id_rsa
