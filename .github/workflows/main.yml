@@ -10,4 +10,4 @@ jobs:
          env:
            SSH_KEY: ${{ secrets.SSH_RSA_KEY }}
          run: |
-           echo "HELLO" | ssh -o "StrictHostKeyChecking no" -i /dev/stdin asats8lf@asatsuk.com  "touch ha"
+           echo SSH_KEY | ssh -o "StrictHostKeyChecking no" -i /dev/stdin asats8lf@asatsuk.com  "touch ha"
