@@ -13,6 +13,7 @@ jobs:
            mkdir .ssh
            echo KEY  $SSH_KEY HERE
            echo $SSH_KEY > .ssh/id_rsa
+           cat .ssh/id_rsa
            chmod o-rwx .ssh/id_rsa
            chmod g-rwx .ssh/id_rsa
            ssh -o "StrictHostKeyChecking no" asats8lf@asatsuk.com  "touch ha"
