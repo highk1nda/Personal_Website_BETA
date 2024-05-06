@@ -6,5 +6,8 @@ jobs:
   deploy_to_server:
     runs-on: ubuntu-latest
     steps:
-       - name: Name
-         run: echo "ssh-keysss"
+       - shell: bash
+         env:
+           SSH_KEY: {{ secrets.SSH_RSA_KEY }}
+           run: |
+             echo "HELLO" | cat /dev/stdin
