@@ -8,6 +8,6 @@ jobs:
     steps:
        - shell: bash
          env:
-           SSH_KEY: {{ secrets.SSH_RSA_KEY }}
+           SSH_KEY: ${{ secrets.SSH_RSA_KEY }}
          run: |
            echo "HELLO" | cat /dev/stdin
