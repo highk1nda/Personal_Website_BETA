@@ -116,7 +116,7 @@ h1 span {
 }
 @media screen and (max-width: 410px) {
   h1 span {
-    width: calc(10vh + 1vw);
+    width: calc(12vh + 1vw);
   }
 }
 .content-img {
