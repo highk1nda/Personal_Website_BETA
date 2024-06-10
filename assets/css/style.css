@@ -30,15 +30,6 @@ a {
 
 }
 
-.nav {
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-
 .logo-as{
     max-height: 320px;
     height: auto;

@@ -18,25 +18,25 @@
 </head>
 
 <body>
-        <div class="nav">
-            <ul class="menu">
-                <li class="menu-li-page"><a href="index.html">Main Page</a></li>
-                <li class="menu-li-page"><a href="expirience.html">Expirience</a></li>
-                <li class="menu-li-page"><a href="about_me.html">About Me</a></li>
-                <li class="menu-li-page"><a href="contacts.html">Contacts</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
         <div class="bg-contacts">
             <div class="bgseparator-title">
                 <div class="bg-title">
                     <h1 class="bg-title-h1">Contacts</h1>
                     <p>GitHub, LinkedIn, E-Mail</p>
                     <!-- <p class="bg-text-caps-p">LINKS</p>  -->
+                    <div class="nav">
+                        <ul class="menu">
+                            <li class="menu-li-page"><a href="index.html">Main Page</a></li>
+                            <li class="menu-li-page"><a href="expirience.html">Expirience</a></li>
+                            <li class="menu-li-page"><a href="about_me.html">About Me</a></li>
+                            <li class="menu-li-page"><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="bgseparator-contacts">
@@ -67,16 +67,16 @@
                         <form action="submit_form.php" method="post">
                             <div class="input_box">
                                 <label class="text-area-title">Contact me!</label>
-                                <textarea placeholder="Enter your E-Mail.." class="text-area-email"></textarea>
+                                <textarea placeholder="Enter your E-Mail.." id='text-area'  class="text-area-email"></textarea>
                             </div>
                             <div class="input_box">
                                 <label class="text-area-title">
                                     NOTE: Form is not available yet
                                 </label>
-                                <textarea placeholder="Enter your message.." class="text-area" style="padding-bottom: 45px;"></textarea>
+                                <textarea placeholder="Enter your message.." id='text-area' class="text-area" style="padding-bottom: 45px;"></textarea>
                             </div>
                             <div class="input_box">
-                                <input type="submit" class="button-contact" value="Submit" disabled>
+                                <input type="submit" id="test-form" class="button-contact" value="Submit">
                             </div>
                         </form>
                         </div>

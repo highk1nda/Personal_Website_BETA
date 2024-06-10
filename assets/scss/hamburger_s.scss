@@ -1,16 +1,21 @@
 .menu {
-    background-color: #000000;
+    z-index: 100;
+    height: 50px;
+    width: 70%;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: inherit;
-    position: fixed;
-    height: 50px;
-    width: 100%;
-    position: fixed;
+    background-color: #000000;
+    border-radius: 30px;
     opacity: 0.90;
-    z-index: 100;
     transition: 0.2s;
+    margin-top: 6vh;
+}
+
+.nav {
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .menu:hover {
@@ -32,7 +37,8 @@
 }
 
 .menu-li-page{
-    width: 16%;
+    white-space: nowrap;
+    width: 20%;
     display: flex;
     justify-content: center;
 }
@@ -55,23 +61,33 @@
 //         height: 500px;
 //     }
 // }
-@media screen and (max-width:700px) {
+
+@media screen and (max-width:800px) {
+    .logo-info {
+        flex-direction: column;
+    }
+    .menu{
+        width: 90%;
+    }
     .menu-li-page{
         width: 23%;
     }
 }
+
 @media screen and (max-width:570px) {
     .menu {
         display: none;
     }
 
     .menu.active {
-        opacity: 0.95;
+        position: fixed;
+        opacity: 1;
+        z-index: 100;
         align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 26vh;
     }
     .menu-li-page{
         width: 33%;

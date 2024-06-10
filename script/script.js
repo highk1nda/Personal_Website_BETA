@@ -46,8 +46,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
+const test_form = document.getElementById("test-form");
+console.log('FJDKFHDJKFHSKDJFH')
+// test_form.addEventListener("click", function test_form () {
+//     const text_area = document.getElementById("text-area");
+// })
 
 
 // function myFunction() {

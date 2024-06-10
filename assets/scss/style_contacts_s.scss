@@ -21,10 +21,7 @@ body{
     height: 100%;
 }
 .bgseparator-title{
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 .bgseparator-contacts{
     height: 40%;
@@ -55,7 +52,7 @@ body{
     border-radius: 40px;
     background-color: black;
     width: 50%;
-    min-height: 300px;
+    min-height: 330px;
     max-height: 400px;
 }
 .bg-title{
@@ -100,16 +97,24 @@ input[type=submit] {
     border-radius: 43px;
     transition: 0.3s;
     color: #ffffff;
+    &:hover{
+        transition: 0.2s ease-in-out;
+        background-image: linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 70.71%),linear-gradient(127deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70.71%),linear-gradient(336deg, rgba(0,255,0,0.8), rgba(0,255,0,0) 70.71%);
+        background-size: 200% 300%;
+        -webkit-animation: 10s infinite granimate;
+        animation: 10s infinite granimate;
+        opacity: 80%;
+    }
 }
 
-input[type=submit]:hover {
-    transition: 0.2s ease-in-out;
-    background-image: linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 70.71%),linear-gradient(127deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70.71%),linear-gradient(336deg, rgba(0,255,0,0.8), rgba(0,255,0,0) 70.71%);
-    background-size: 200% 300%;
-    -webkit-animation: 10s infinite granimate;
-    animation: 10s infinite granimate;
-    opacity: 80%;
-}
+// input[type=submit]:hover {
+//     transition: 0.2s ease-in-out;
+//     background-image: linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 70.71%),linear-gradient(127deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70.71%),linear-gradient(336deg, rgba(0,255,0,0.8), rgba(0,255,0,0) 70.71%);
+//     background-size: 200% 300%;
+//     -webkit-animation: 10s infinite granimate;
+//     animation: 10s infinite granimate;
+//     opacity: 80%;
+// }
 
 .button-contact{
     width: 130px;
