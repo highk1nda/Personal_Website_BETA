@@ -1,9 +1,0 @@
-Email: 123
-Message: 123123
--------------
-Email: 12312312
-Message: 123123123
--------------
-Email: TEST FLASK
-Message: TEST FLASKTEST FLASKTEST FLASKTEST FLASK
--------------

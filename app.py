@@ -7,7 +7,19 @@ app = Flask(__name__)
 def home():
    return render_template('/index.html')
 
-@app.route('/contacts.html')
+@app.route('/index')
+def index():
+   return render_template('/index.html')
+   
+@app.route('/about_me')
+def about_me():
+   return render_template('/about_me.html')
+
+@app.route('/experience')
+def experience():
+   return render_template('/expirience.html')
+
+@app.route('/contacts')
 def contacts():
    return render_template('/contacts.html')
 
@@ -25,7 +37,7 @@ def submit():
         os.makedirs('data')
 
     # Write the form data to a file
-    with open('form_data.txt', 'a') as file:
+    with open('data/form_data.txt', 'a') as file:
         file.write(f"Email: {user_email}\n")
         file.write(f"Message: {user_message}\n")
         file.write("-------------\n")
@@ -34,10 +46,6 @@ def submit():
 # dfsdfsdf
 # dfsdfsdf
 app.run(debug=True)
-
-
-
-
 
 
 

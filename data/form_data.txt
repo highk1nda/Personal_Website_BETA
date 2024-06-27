@@ -1,0 +1,16 @@
+Email: TEST FLASK
+Message: TEST FLASKTEST FLASKTEST FLASKTEST FLASK
+-------------
+Email: Test@sample.com
+Message: It works right?
+-------------
+Email: 123@mail.com
+Message: 123123123msg
+-------------
+Email: STATIC FOLDER TEST
+Message: STATIC FOLDER TESTSTATIC FOLDER TESTSTATIC FOLDER TEST
+-------------
+Email: sdfsdfsdf
+Message: sdfsdfsdfsdf
+-------------
+# NOTE: I will use a database in the future, plus develop an input validator to address potential threats. For now, .txt :)

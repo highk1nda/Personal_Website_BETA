@@ -1,4 +1,4 @@
-assets/css/*.css.map
+static/css/*.css.map
 test/*
-images/old/*
-images/to-replace/*
+static/images/old/*
+static/images/to-replace/*
