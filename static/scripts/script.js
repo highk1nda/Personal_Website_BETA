@@ -1,3 +1,5 @@
+// HAMBURGER below
+
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 
@@ -40,17 +42,16 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     }
 
-    // Trigger the scroll event to check initially
+    // Trigger the scroll event
     window.dispatchEvent(new Event('scroll'));
 });
 
 
+// HAMBURGER above
 
 
 
-
- 
-
+// SLIDER ANIMATION below
 
 
 const slides = document.querySelectorAll(".slides img");
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", initializeSlider);
 function initializeSlider(){
     if(slides.length > 0){
         slides[slideIndex].classList.add("displaySlide");
-        intervalId = setInterval(nextSlide, 500000);
+        intervalId = setInterval(nextSlide, 50000);
     }
 }
 
@@ -98,6 +99,34 @@ function nextSlideImgClick(){
 
 
 
+// SLIDER ANIMATION above
+
+
+
+// TEXT SELECTOR below
+
+document.getElementById('topicOne').addEventListener('click', function() {
+    showText('textOne');
+});
+
+document.getElementById('topicTwo').addEventListener('click', function() {
+    showText('textTwo');
+});
+
+document.getElementById('topicThree').addEventListener('click', function() {
+    showText('textThree');
+});
+
+let textOne = document.getElementById("textOne")
+let textTwo = document.getElementById("textTwo")
+let textThree = document.getElementById("textThree")
+
+function showText(){
+    slides[slideIndex].classList.add("displaySlide");
+}
+
+
+// TEXT SELECTOR above
 
 
 
@@ -114,13 +143,9 @@ function nextSlideImgClick(){
 
 
 
+// const test_form = document.getElementById("test-form");
+// console.log('FJDKFHDJKFHSKDJFH')
 
-
-
-
-
-const test_form = document.getElementById("test-form");
-console.log('FJDKFHDJKFHSKDJFH')
 // test_form.addEventListener("click", function test_form () {
 //     const text_area = document.getElementById("text-area");
 // })
