@@ -187,4 +187,14 @@ img.displaySlide:hover {
   padding-top: 5%;
 }
 
+.text {
+  display: none;
+}
+
+.displaySlide {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  display: block;
+}
+
 /*# sourceMappingURL=about_me_c.css.map */

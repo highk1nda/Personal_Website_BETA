@@ -210,3 +210,12 @@ img.displaySlide{
 .text-selected{
     padding-top: 5%;
 }
+
+.text {
+    display: none;
+}
+.displaySlide {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    display: block;
+}

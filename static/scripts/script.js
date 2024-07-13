@@ -117,13 +117,12 @@ document.getElementById('topicThree').addEventListener('click', function() {
     showText('textThree');
 });
 
-let textOne = document.getElementById("textOne")
-let textTwo = document.getElementById("textTwo")
-let textThree = document.getElementById("textThree")
-
-function showText(){
-    slides[slideIndex].classList.add("displaySlide");
+function showText(textId) {
+    let texts = document.querySelectorAll('.text');
+    texts.forEach(text => text.classList.remove('displaySlide'));
+    document.getElementById(textId).classList.add('displaySlide');
 }
+
 
 
 // TEXT SELECTOR above
