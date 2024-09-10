@@ -13,4 +13,6 @@ Message: STATIC FOLDER TESTSTATIC FOLDER TESTSTATIC FOLDER TEST
 Email: sdfsdfsdf
 Message: sdfsdfsdfsdf
 -------------
-# NOTE: I will use a database in the future, plus develop an input validator to address potential threats. For now, .txt :)
+# NOTE: I will use a database in the future, plus develop an input validator to address potential threats. For now, .txt :)Email: test@gmail.con
+Message: BLA BLA BLA
+-------------

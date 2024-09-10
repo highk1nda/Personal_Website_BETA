@@ -75,7 +75,7 @@ img.displaySlide {
   display: block;
   border-radius: 17px;
   box-shadow: 7px 6px rgba(20, 20, 20, 0.9294117647);
-  transition: 0.4s;
+  transition: 0.3s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -144,7 +144,6 @@ img.displaySlide:hover {
 
 .text-selector {
   padding-top: 5%;
-  width: 50%;
 }
 
 .photo-slider {
@@ -195,6 +194,22 @@ img.displaySlide:hover {
   animation-name: fade;
   animation-duration: 1.5s;
   display: block;
+}
+
+@media screen and (max-width: 400px) {
+  .slider {
+    width: 100%;
+  }
+  .section-text-about-me {
+    width: 100%;
+  }
+  .bg-about-me {
+    flex-direction: column;
+    height: 110vh;
+  }
+  .content-about-me {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=about_me_c.css.map */
