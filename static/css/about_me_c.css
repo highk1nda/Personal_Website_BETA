@@ -45,7 +45,7 @@
   color: white;
   background-color: rgba(20, 20, 20, 0.9294117647);
   border-radius: 17px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .slides {
@@ -57,7 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 35px;
+  padding: 25px;
   height: 100%;
   width: 40%;
   max-width: 400px;
@@ -183,6 +183,8 @@ img.displaySlide:hover {
 }
 
 .text-selected {
+  display: flex;
+  justify-content: center;
   padding-top: 5%;
 }
 
@@ -191,24 +193,43 @@ img.displaySlide:hover {
 }
 
 .displaySlide {
+  width: 70%;
   animation-name: fade;
   animation-duration: 1.5s;
   display: block;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
+  .content-about-me {
+    width: 90%;
+  }
   .slider {
-    width: 100%;
+    width: 50%;
   }
-  .section-text-about-me {
-    width: 100%;
+  .slider-buttons {
+    gap: 5vh;
   }
+}
+@media screen and (max-width: 580px) {
   .bg-about-me {
     flex-direction: column;
-    height: 110vh;
+    height: 100vh;
+  }
+  .slider {
+    width: 80%;
+    overflow: visible;
+  }
+  .section-text-about-me {
+    width: 80%;
+    padding-bottom: 5%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .selector-container-buttons {
+    width: 100%;
   }
   .content-about-me {
-    width: 80%;
+    width: 100%;
   }
 }
 

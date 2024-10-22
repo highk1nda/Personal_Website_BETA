@@ -30,10 +30,58 @@
     width: 80%;
 }
 
+.animated-circle-red {
+    position: absolute;
+    background-color: rgb(255 111 111 / 67%);
+    border-radius: 50%;
+    filter: blur(95px);
+    animation: slide 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
+    @keyframes slide {
+        0% {
+            transform: translate(-50%, -50%); /* Initial position */
+        }
+        100% {
+            transform: translate(-50%, -150%); /* Destination position */
+        }
+    }
+    
+}
+
 .description{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10vh;
+}
+
+.container-expirience-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+}
+.expirience-cards{
+    z-index: 1;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    gap: 4vh;
+}
+.expirience-card-button{
+    min-width: 300px;
+    color: white;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(96, 96, 96);
+    box-shadow: 9px 13px rgba(255, 153, 153, 0.1411764706);
+    border: none;
+    border-radius: 20px;
+    transition: .4s;
+    &:hover{
+        box-shadow:4px 5px #622c2c;
+        transition: .4s;
+    }
 }
 
 // .bg-contacts {
